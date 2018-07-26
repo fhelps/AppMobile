@@ -41,7 +41,7 @@ export default class App extends React.Component {
 
     return (
       <FlatList 
-      data={vagas}
+      data={this.state.jobs}
       style= {{ flex:1, backgroundColor: 'white' }}
       renderItem={({item}) => this.renderItem(item)}
       ListHeaderComponent={()=> this.renderHeader()}
